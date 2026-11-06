@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1036" height="600">
+    <rect width="1036" height="600" x="0" y="0" fill="#FFFFFF" id="background" />
+    <g transform="translate(10,18)" id="viz">
+        <g id="ancestors">
+            <g transform="translate(0,0)">
+                <rect
+                    width="810"
+                    height="572"
+                    id="path_ancestor0"
+                    fill="#ccc"
+                    fill-opacity="0"
+                    stroke="#ccc"
+                    stroke-opacity="0.1"
+                />
+                <clipPath id="clip_ancestor0">
+                    <use xmlns:ns1="http://www.w3.org/1999/xlink" ns1:href="#path_ancestor0" />
+                </clipPath>
+                <text
+                    x="6"
+                    y="2"
+                    clip-path="url(#clip_ancestor0)"
+                    font-family="Arial, sans-serif"
+                    font-size="8"
+                    dominant-baseline="text-before-edge"
+                    class="txt"
+                >
+                    Root
+                </text>
+            </g>
+        </g>
+        <g id="leaves">
+            <g transform="translate(6,12)">
+                <rect id="path0" fill="#3c9adb" width="798" height="166" />
+                <clipPath id="clip0"><use xmlns:ns2="http://www.w3.org/1999/xlink" ns2:href="#path0" /></clipPath>
+                <text
+                    clip-path="url(#clip0)"
+                    font-family="Arial, sans-serif"
+                    font-size="10"
+                    dominant-baseline="text-before-edge"
+                    class="txt"
+                >
+                    <tspan
+                        x="3"
+                        y="0.2em"
+                        style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold"
+                    >
+                        Americas
+                    </tspan>
+                    <tspan
+                        x="3"
+                        y="1.3em"
+                        style="
+                            font-family: Arial, sans-serif;
+                            font-size: 10px;
+                            fill: black;
+                            font-weight: normal;
+                            font-style: italic;
+                        "
+                    >
+                        United States of America,Canada,Argentina
+                    </tspan>
+                    <tspan
+                        x="3"
+                        y="2.4000000000000004em"
+                        style="
+                            font-family: Arial, sans-serif;
+                            font-size: 10px;
+                            fill: black;
+                            font-weight: normal;
+                            font-style: italic;
+                        "
+                    >
+                        31
+                    </tspan>
+                </text>
+            </g>
+            <g transform="translate(6,184)">
+                <rect id="path1" fill="#42c342" width="798" height="193" />
+                <clipPath id="clip1"><use xmlns:ns3="http://www.w3.org/1999/xlink" ns3:href="#path1" /></clipPath>
+                <text
+                    clip-path="url(#clip1)"
+                    font-family="Arial, sans-serif"
+                    font-size="10"
+                    dominant-baseline="text-before-edge"
+                    class="txt"
+                >
+                    <tspan
+                        x="3"
+                        y="0.2em"
+                        style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold"
+                    >
+                        Europe
+                    </tspan>
+                    <tspan
+                        x="3"
+                        y="1.3em"
+                        style="
+                            font-family: Arial, sans-serif;
+                            font-size: 10px;
+                            fill: black;
+                            font-weight: normal;
+                            font-style: italic;
+                        "
+                    >
+                        United Kingdom,Switzerland,Germany,France,Netherlands,Belgium,Sweden,Ireland,Italy,Denmark
+                    </tspan>
+                    <tspan
+                        x="3"
+                        y="2.4000000000000004em"
+                        style="
+                            font-family: Arial, sans-serif;
+                            font-size: 10px;
+                            fill: black;
+                            font-weight: normal;
+                            font-style: italic;
+                        "
+                    >
+                        36
+                    </tspan>
+                </text>
+            </g>
+            <g transform="translate(6,383)">
+                <rect id="path2" fill="#ff7f0e" width="798" height="128" />
+                <clipPath id="clip2"><use xmlns:ns4="http://www.w3.org/1999/xlink" ns4:href="#path2" /></clipPath>
+                <text
+                    clip-path="url(#clip2)"
+                    font-family="Arial, sans-serif"
+                    font-size="10"
+                    dominant-baseline="text-before-edge"
+                    class="txt"
+                >
+                    <tspan
+                        x="3"
+                        y="0.2em"
+                        style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold"
+                    >
+                        Asia
+                    </tspan>
+                    <tspan
+                        x="3"
+                        y="1.3em"
+                        style="
+                            font-family: Arial, sans-serif;
+                            font-size: 10px;
+                            fill: black;
+                            font-weight: normal;
+                            font-style: italic;
+                        "
+                    >
+                        Singapore,Hong Kong SAR, China,China (Mainland),Republic of Korea,Japan,Taiwan,Malaysia,Saudi
+                        Arabia
+                    </tspan>
+                    <tspan
+                        x="3"
+                        y="2.4000000000000004em"
+                        style="
+                            font-family: Arial, sans-serif;
+                            font-size: 10px;
+                            fill: black;
+                            font-weight: normal;
+                            font-style: italic;
+                        "
+                    >
+                        24
+                    </tspan>
+                </text>
+            </g>
+            <g transform="translate(6,517)">
+                <rect id="path3" fill="#f84293" width="798" height="49" />
+                <clipPath id="clip3"><use xmlns:ns5="http://www.w3.org/1999/xlink" ns5:href="#path3" /></clipPath>
+                <text
+                    clip-path="url(#clip3)"
+                    font-family="Arial, sans-serif"
+                    font-size="10"
+                    dominant-baseline="text-before-edge"
+                    class="txt"
+                >
+                    <tspan
+                        x="3"
+                        y="0.2em"
+                        style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold"
+                    >
+                        Oceania
+                    </tspan>
+                    <tspan
+                        x="3"
+                        y="1.3em"
+                        style="
+                            font-family: Arial, sans-serif;
+                            font-size: 10px;
+                            fill: black;
+                            font-weight: normal;
+                            font-style: italic;
+                        "
+                    >
+                        Australia,New Zealand
+                    </tspan>
+                    <tspan
+                        x="3"
+                        y="2.4000000000000004em"
+                        style="
+                            font-family: Arial, sans-serif;
+                            font-size: 10px;
+                            fill: black;
+                            font-weight: normal;
+                            font-style: italic;
+                        "
+                    >
+                        10
+                    </tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+    <g id="legend" transform="translate(830,18)">
+        <g transform="translate(5,0)">
+            <g class="legendColor" transform="translate(0,0)">
+                <g class="legendCells" transform="translate(0,15.5)">
+                    <g class="cell" transform="translate(0, 0)">
+                        <rect class="swatch" height="15" width="15" style="fill: rgb(60, 154, 219)" />
+                        <text
+                            class="label"
+                            transform="translate( 20, 12.5)"
+                            font-family='"Arial", sans-serif'
+                            font-size="10px"
+                        >
+                            <tspan x="0" dy="0em">Americas</tspan>
+                        </text>
+                    </g>
+                    <g class="cell" transform="translate(0, 20.5)">
+                        <rect class="swatch" height="15" width="15" style="fill: rgb(255, 127, 14)" />
+                        <text
+                            class="label"
+                            transform="translate( 20, 12.5)"
+                            font-family='"Arial", sans-serif'
+                            font-size="10px"
+                        >
+                            <tspan x="0" dy="0em">Asia</tspan>
+                        </text>
+                    </g>
+                    <g class="cell" transform="translate(0, 41)">
+                        <rect class="swatch" height="15" width="15" style="fill: rgb(66, 195, 66)" />
+                        <text
+                            class="label"
+                            transform="translate( 20, 12.5)"
+                            font-family='"Arial", sans-serif'
+                            font-size="10px"
+                        >
+                            <tspan x="0" dy="0em">Europe</tspan>
+                        </text>
+                    </g>
+                    <g class="cell" transform="translate(0, 61.5)">
+                        <rect class="swatch" height="15" width="15" style="fill: rgb(248, 66, 147)" />
+                        <text
+                            class="label"
+                            transform="translate( 20, 12.5)"
+                            font-family='"Arial", sans-serif'
+                            font-size="10px"
+                        >
+                            <tspan x="0" dy="0em">Oceania</tspan>
+                        </text>
+                    </g>
+                </g>
+                <text class="legendTitle" font-family='"Arial", sans-serif' font-size="12px" font-weight="bold">
+                    <tspan x="0" dy="0em">Region</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
