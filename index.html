@@ -6,7 +6,10 @@
         <title>Ranking QS Arte y Diseño</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"/>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
         <style>
             :root {
                 --color-bg: #fafafa;
@@ -171,9 +174,9 @@
                 letter-spacing: 0.01rem;
             }
 
-            hr{
-                margin-top:2rem;
-                border:2px solid #ddd;
+            hr {
+                margin-top: 2rem;
+                border: 2px solid #ddd;
             }
 
             div.container > p:nth-child(1) {
@@ -219,7 +222,10 @@
                 padding: 0.4rem 0.2rem;
             }
 
-            table:first-of-type th:nth-child(3), table:first-of-type th:nth-child(4), table:first-of-type td:nth-child(3), table:first-of-type td:nth-child(4){
+            table:first-of-type th:nth-child(3),
+            table:first-of-type th:nth-child(4),
+            table:first-of-type td:nth-child(3),
+            table:first-of-type td:nth-child(4) {
                 text-align: center;
             }
 
@@ -246,22 +252,67 @@
             }
 
             /* --- Gráfico radar interactivo (inline SVG) --- */
-            .grafico .grid { fill: none; stroke: #ddd; }
-            .grafico .eje { stroke: #aaa; }
-            .grafico text { font-family: var(--font-sans); font-size: 15px; fill: var(--color-text); }
-            .grafico .escala { font-size: 11px; fill: #999; }
-            .grafico .titulo { font-size: 15px; fill: var(--color-text-dark); }
-            .grafico .nota-svg { font-size: 12px; fill: var(--color-text-light); }
-            .grafico .area { fill-opacity: 0.2; stroke-width: 2; transition: fill-opacity 0.3s; }
-            .grafico .area:hover { fill-opacity: 0.5; }
-            .grafico .puc { fill: #FEC60D; stroke: #FEC60D; }
-            .grafico .uch { fill: #1F5592; stroke: #1F5592; }
-            .grafico .udd { fill: #d62728; stroke: #d62728; }
-            .grafico .punto { stroke: #fff; stroke-width: 1; }
-            .grafico .item { cursor: pointer; }
-            .grafico .item rect { width: 14px; height: 14px; }
-            .nones { display: none; }
-            .apagado { opacity: 0.3; }
+            .grafico .grid {
+                fill: none;
+                stroke: #ddd;
+            }
+            .grafico .eje {
+                stroke: #aaa;
+            }
+            .grafico text {
+                font-family: var(--font-sans);
+                font-size: 15px;
+                fill: var(--color-text);
+            }
+            .grafico .escala {
+                font-size: 11px;
+                fill: #999;
+            }
+            .grafico .titulo {
+                font-size: 15px;
+                fill: var(--color-text-dark);
+            }
+            .grafico .nota-svg {
+                font-size: 12px;
+                fill: var(--color-text-light);
+            }
+            .grafico .area {
+                fill-opacity: 0.2;
+                stroke-width: 2;
+                transition: fill-opacity 0.3s;
+            }
+            .grafico .area:hover {
+                fill-opacity: 0.5;
+            }
+            .grafico .puc {
+                fill: #fec60d;
+                stroke: #fec60d;
+            }
+            .grafico .uch {
+                fill: #1f5592;
+                stroke: #1f5592;
+            }
+            .grafico .udd {
+                fill: #d62728;
+                stroke: #d62728;
+            }
+            .grafico .punto {
+                stroke: #fff;
+                stroke-width: 1;
+            }
+            .grafico .item {
+                cursor: pointer;
+            }
+            .grafico .item rect {
+                width: 14px;
+                height: 14px;
+            }
+            .nones {
+                display: none;
+            }
+            .apagado {
+                opacity: 0.3;
+            }
 
             canvas {
                 margin-bottom: 3rem;
@@ -304,7 +355,6 @@
                 font-weight: 700;
                 color: var(--color-text-light);
             }
-
         </style>
     </head>
 
@@ -312,41 +362,107 @@
         <div class="container">
             <h1>Ranking <abbr title="Quacquarelli Symonds">QS</abbr></h1>
 
-              <h2>Las mejores universidades del mundo y las 100 mejores escuelas de Arte y Diseño</h2>
+            <h2>Las mejores universidades del mundo y las 100 mejores escuelas de Arte y Diseño</h2>
 
             <h5>Por <a href="https://github.com/evorakie">Sayen Padilla</a></h5>
 
-            <h6><time datetime="2026-11-06T17:00-03:00">Publicado el viernes 6 de noviembre de 2026 &nbsp;&nbsp;&nbsp; 18:00 h (GMT-3)</time></h6>
+            <h6>
+                <time datetime="2026-11-06T17:00-03:00"
+                    >Publicado el viernes 6 de noviembre de 2026 &nbsp;&nbsp;&nbsp; 18:00 h (GMT-3)</time
+                >
+            </h6>
 
-            <p>El <em>Ranking <abbr title="Quacquarelli Symonds">QS</abbr></em> es un sistema de clasificación académica desarrollado por <em>Quacquarelli Symonds</em>. Nació en 2004, en alianza con <em>Times Higher Education</em>, bajo el nombre <em><abbr title="Times Higher Education - Quacquarelli Symonds">THE-QS</abbr> World University Rankings</em>. Tras la separación de ambas entidades en 2009 adoptó su estructura actual, que tiene dos vertientes: <em><abbr title="Quacquarelli Symonds">QS</abbr> World University Rankings</em>, centrada en el desempeño institucional general, y <em><abbr title="Quacquarelli Symonds">QS</abbr> World University Rankings by Subject</em>, orientada a la evaluación académica por disciplinas.</p>
-
-            <p>La edición vigente del ranking institucional se publicó en junio de 2026. <a href="https://www.topuniversities.com/world-university-rankings" target="_blank" rel="noopener">Evaluó y posicionó 1.504 instituciones de educación superior de todo el mundo, 17 de ellas chilenas</a>.</p>
-
-            <p>La edición vigente del ranking por disciplina se publicó en marzo de 2026. <a href="https://www.topuniversities.com/university-subject-rankings/art-design" target="_blank" rel="noopener">En Arte y Diseño evaluó y posicionó 302 instituciones, 3 de ellas chilenas</a>.
+            <p>
+                El <em>Ranking <abbr title="Quacquarelli Symonds">QS</abbr></em> es un sistema de clasificación
+                académica desarrollado por <em>Quacquarelli Symonds</em>. Nació en 2004, en alianza con
+                <em>Times Higher Education</em>, bajo el nombre
+                <em
+                    ><abbr title="Times Higher Education - Quacquarelli Symonds">THE-QS</abbr> World University
+                    Rankings</em
+                >. Tras la separación de ambas entidades en 2009 adoptó su estructura actual, que tiene dos vertientes:
+                <em><abbr title="Quacquarelli Symonds">QS</abbr> World University Rankings</em>, centrada en el
+                desempeño institucional general, y
+                <em><abbr title="Quacquarelli Symonds">QS</abbr> World University Rankings by Subject</em>, orientada a
+                la evaluación académica por disciplinas.
             </p>
 
-            <hr/>
+            <p>
+                La edición vigente del ranking institucional se publicó en junio de 2026.
+                <a href="https://www.topuniversities.com/world-university-rankings" target="_blank" rel="noopener"
+                    >Evaluó y posicionó 1.504 instituciones de educación superior de todo el mundo, 17 de ellas
+                    chilenas</a
+                >.
+            </p>
 
-            <h3 id="universidades">Las mejores universidades del mundo según <abbr title="Quacquarelli Symonds">QS</abbr></h3>
+            <p>
+                La edición vigente del ranking por disciplina se publicó en marzo de 2026.
+                <a
+                    href="https://www.topuniversities.com/university-subject-rankings/art-design"
+                    target="_blank"
+                    rel="noopener"
+                    >En Arte y Diseño evaluó y posicionó 302 instituciones, 3 de ellas chilenas</a
+                >.
+            </p>
 
-            <p>En el ranking institucional, la Pontificia Universidad Católica de Chile (puesto 119) y la Universidad de Chile (puesto 185) figuran entre las cinco mejores de Hispanoamérica. Con 17 instituciones entre las 1.504 evaluadas, Chile ocupa además el quinto lugar de América en número de instituciones representadas. Estos resultados se miden, entre otros indicadores, por prestigio académico, valoración de los empleadores, cantidad de docentes por estudiante e impacto de la investigación. Son fruto de políticas públicas que hoy enfrentan la perspectiva de recortes presupuestarios. Sin embargo, estos resultados también evidencian los desafíos que enfrenta la educación superior chilena para mantener su competitividad a nivel internacional. La reducción de recursos destinados a las universidades públicas podría afectar sus capacidades de investigación, contratación docente, infraestructura y desarrollo académico. En este escenario, sostener la presencia de Chile en los rankings internacionales no depende únicamente del desempeño de sus instituciones, sino también de la continuidad de políticas públicas que garanticen condiciones adecuadas para su funcionamiento y crecimiento.</p>
+            <hr />
+
+            <h3 id="universidades">
+                Las mejores universidades del mundo según <abbr title="Quacquarelli Symonds">QS</abbr>
+            </h3>
+
+            <p>
+                En el ranking institucional, la Pontificia Universidad Católica de Chile (puesto 119) y la Universidad
+                de Chile (puesto 185) figuran entre las cinco mejores de Hispanoamérica. Con 17 instituciones entre las
+                1.504 evaluadas, Chile ocupa además el quinto lugar de América en número de instituciones representadas.
+                Estos resultados se miden, entre otros indicadores, por prestigio académico, valoración de los
+                empleadores, cantidad de docentes por estudiante e impacto de la investigación. Son fruto de políticas
+                públicas que hoy enfrentan la perspectiva de recortes presupuestarios. Sin embargo, estos resultados
+                también evidencian los desafíos que enfrenta la educación superior chilena para mantener su
+                competitividad a nivel internacional. La reducción de recursos destinados a las universidades públicas
+                podría afectar sus capacidades de investigación, contratación docente, infraestructura y desarrollo
+                académico. En este escenario, sostener la presencia de Chile en los rankings internacionales no depende
+                únicamente del desempeño de sus instituciones, sino también de la continuidad de políticas públicas que
+                garanticen condiciones adecuadas para su funcionamiento y crecimiento.
+            </p>
 
             <h4>América, Europa y otros continentes</h4>
 
-            <p>El siguiente gráfico muestra cómo se distribuyen, por continente y país, las 100 mejores universidades del mundo. A partir de los datos, se observa una mayor concentración de instituciones en Europa, con 36 universidades, seguida de América, con 31, y Asia, con 24. Por su parte, Oceanía presenta una participación menor, con 10 instituciones.</p><p>Esta distribución permite identificar una importante concentración de universidades de alto posicionamiento en Europa y América, mientras que Asia y Oceanía tienen una representación comparativamente menor. Asimismo, la visualización evidencia que el reconocimiento internacional de la educación superior no se distribuye de manera homogénea entre los territorios, sino que presenta diferencias asociadas a la presencia y concentración de instituciones en determinadas regiones. </p>
+            <p>
+                El siguiente gráfico muestra cómo se distribuyen, por continente y país, las 100 mejores universidades
+                del mundo. A partir de los datos, se observa una mayor concentración de instituciones en Europa, con 36
+                universidades, seguida de América, con 31, y Asia, con 24. Por su parte, Oceanía presenta una
+                participación menor, con 10 instituciones.
+            </p>
+            <p>
+                Esta distribución permite identificar una importante concentración de universidades de alto
+                posicionamiento en Europa y América, mientras que Asia y Oceanía tienen una representación
+                comparativamente menor. Asimismo, la visualización evidencia que el reconocimiento internacional de la
+                educación superior no se distribuye de manera homogénea entre los territorios, sino que presenta
+                diferencias asociadas a la presencia y concentración de instituciones en determinadas regiones.
+            </p>
 
             <object data="viz.svg" type="image/svg+xml">Tu navegador no soporta SVG</object>
 
-            <p>Con el puesto 84, la Universidad de Buenos Aires (<abbr title="Universidad de Buenos Aires">UBA</abbr>) es la única institución hispanoamericana dentro del top 100 mundial. Entre las 100 y las 200 mejores le siguen la Pontificia Universidad Católica de Chile (119), la Universidad Nacional Autónoma de México (145), la Universidad de Chile (185) y el Tecnológico de Monterrey (188).
+            <p>
+                Con el puesto 84, la Universidad de Buenos Aires (<abbr title="Universidad de Buenos Aires">UBA</abbr>)
+                es la única institución hispanoamericana dentro del top 100 mundial. Entre las 100 y las 200 mejores le
+                siguen la Pontificia Universidad Católica de Chile (119), la Universidad Nacional Autónoma de México
+                (145), la Universidad de Chile (185) y el Tecnológico de Monterrey (188).
             </p>
 
             <h4>Chile en América</h4>
 
-            <p>El continente americano reúne 332 de las 1.504 instituciones consideradas en el ranking. Su distribución por país es la siguiente:</p>
+            <p>
+                El continente americano reúne 332 de las 1.504 instituciones consideradas en el ranking. Su distribución
+                por país es la siguiente:
+            </p>
 
-            <canvas style="background-color: rgb(242, 242, 242);" id="identidad"></canvas>
+            <canvas style="background-color: rgb(242, 242, 242)" id="identidad"></canvas>
 
-            <p>Los cinco países con más instituciones son Estados Unidos (184), Canadá (30), Brasil (22), México (18) y Chile (17).</p>
+            <p>
+                Los cinco países con más instituciones son Estados Unidos (184), Canadá (30), Brasil (22), México (18) y
+                Chile (17).
+            </p>
 
             <h4>Las universidades chilenas con escuelas de Arte y Diseño</h4>
 
@@ -473,234 +589,400 @@
                 Diseño pero no Arte. El siguiente gráfico permite comparar a las tres en cinco dimensiones del ranking
                 institucional.
             </p>
-  
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1005 600">
 
-    <style>
-        svg {
-            width: 100%;
-        }
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1005 600">
+                <style>
+                    svg {
+                        width: 100%;
+                    }
 
-        /* --- Estructura del gráfico --- */
-        .grid {
-            fill: none;
-            stroke: #ddd;
-        }
+                    /* --- Estructura del gráfico --- */
+                    .grid {
+                        fill: none;
+                        stroke: #ddd;
+                    }
 
-        .eje {
-            stroke: #aaa;
-        }
+                    .eje {
+                        stroke: #aaa;
+                    }
 
-        .texto {
-            font-size: 12px;
-            text-anchor: middle;
-        }
+                    .texto {
+                        font-size: 12px;
+                        text-anchor: middle;
+                    }
 
-        /* --- Barras del gráfico --- */
-        .barra {
-            fill-opacity: 0.8;
-            transition: fill-opacity 0.2s ease;
-        }
+                    /* --- Barras del gráfico --- */
+                    .barra {
+                        fill-opacity: 0.8;
+                        transition: fill-opacity 0.2s ease;
+                    }
 
-        .barra:hover {
-            fill-opacity: 1;
-        }
+                    .barra:hover {
+                        fill-opacity: 1;
+                    }
 
-        /* --- Leyenda --- */
-        .item {
-            cursor: pointer;
-            font-size: 12px;
-        }
+                    /* --- Leyenda --- */
+                    .item {
+                        cursor: pointer;
+                        font-size: 12px;
+                    }
 
-        .item rect {
-            width: 14px;
-            height: 14px;
-        }
+                    .item rect {
+                        width: 14px;
+                        height: 14px;
+                    }
 
-        /* --- Estados JavaScript --- */
-        .no {
-            display: none;
-        }
+                    /* --- Estados JavaScript --- */
+                    .no {
+                        display: none;
+                    }
 
-        .apagado {
-            opacity: 0.3;
-        }
-    </style>
+                    .apagado {
+                        opacity: 0.3;
+                    }
+                </style>
 
-    <rect viewBox="0 0 1005 600" fill="#FFFFFF" id="background" />
+                <rect viewBox="0 0 1005 600" fill="#FFFFFF" id="background" />
 
-    <g id="viz">
-        <g transform="translate(0,0)">
-            <g transform="translate(50,20)">
+                <g id="viz">
+                    <g transform="translate(0,0)">
+                        <g transform="translate(50,20)">
+                            <g id="International Research Network Score" fill="#eb2184">
+                                <rect
+                                    class="barra"
+                                    x="496.99955317247543"
+                                    y="519.04"
+                                    width="247.0017873100983"
+                                    height="40.960000000000036"
+                                />
+                                <rect
+                                    class="barra"
+                                    x="248.99910634495083"
+                                    y="437.12"
+                                    width="247.0017873100983"
+                                    height="122.88"
+                                />
+                                <rect
+                                    class="barra"
+                                    x="0.9986595174262334"
+                                    y="432.47999999999996"
+                                    width="247.0017873100983"
+                                    height="127.52000000000004"
+                                />
+                            </g>
 
-                <g id="International Research Network Score" fill="#eb2184">
-                    <rect class="barra" x="496.99955317247543" y="519.04" width="247.0017873100983" height="40.960000000000036" />
-                    <rect class="barra" x="248.99910634495083" y="437.12" width="247.0017873100983" height="122.88" />
-                    <rect class="barra" x="0.9986595174262334" y="432.47999999999996" width="247.0017873100983" height="127.52000000000004" />
+                            <g id="Employer Reputation Score" fill="#2ca02c">
+                                <rect
+                                    class="barra"
+                                    x="496.99955317247543"
+                                    y="490.56"
+                                    width="247.0017873100983"
+                                    height="28.480000000000018"
+                                />
+                                <rect
+                                    class="barra"
+                                    x="248.99910634495083"
+                                    y="300.96000000000004"
+                                    width="247.0017873100983"
+                                    height="136.15999999999997"
+                                />
+                                <rect
+                                    class="barra"
+                                    x="0.9986595174262334"
+                                    y="277.91999999999996"
+                                    width="247.0017873100983"
+                                    height="154.56"
+                                />
+                            </g>
+
+                            <g id="Faculty Student Score" fill="#d62728">
+                                <rect
+                                    class="barra"
+                                    x="496.99955317247543"
+                                    y="464.32000000000005"
+                                    width="247.0017873100983"
+                                    height="26.24000000000001"
+                                />
+                                <rect
+                                    class="barra"
+                                    x="248.99910634495083"
+                                    y="285.12"
+                                    width="247.0017873100983"
+                                    height="15.840000000000032"
+                                />
+                                <rect
+                                    class="barra"
+                                    x="0.9986595174262334"
+                                    y="216.63999999999996"
+                                    width="247.0017873100983"
+                                    height="61.27999999999997"
+                                />
+                            </g>
+
+                            <g id="Citations per Faculty Score" fill="#ff7f0e">
+                                <rect
+                                    class="barra"
+                                    x="496.99955317247543"
+                                    y="458.88"
+                                    width="247.0017873100983"
+                                    height="5.439999999999941"
+                                />
+                                <rect
+                                    class="barra"
+                                    x="248.99910634495083"
+                                    y="259.52000000000004"
+                                    width="247.0017873100983"
+                                    height="25.600000000000023"
+                                />
+                                <rect
+                                    class="barra"
+                                    x="0.9986595174262334"
+                                    y="195.83999999999997"
+                                    width="247.0017873100983"
+                                    height="20.799999999999955"
+                                />
+                            </g>
+
+                            <g id="Academic Reputation Score" fill="#1f77b4">
+                                <rect
+                                    class="barra"
+                                    x="496.99955317247543"
+                                    y="436.32"
+                                    width="247.0017873100983"
+                                    height="22.559999999999945"
+                                />
+                                <rect
+                                    class="barra"
+                                    x="248.99910634495083"
+                                    y="112.32000000000009"
+                                    width="247.0017873100983"
+                                    height="147.2"
+                                />
+                                <rect
+                                    class="barra"
+                                    x="0.9986595174262334"
+                                    y="38.87999999999992"
+                                    width="247.0017873100983"
+                                    height="156.96000000000004"
+                                />
+                            </g>
+
+                            <!-- Eje X -->
+                            <g
+                                id="xAxis"
+                                class="eje"
+                                transform="translate(0,560)"
+                                fill="none"
+                                font-size="10"
+                                font-family="sans-serif"
+                                text-anchor="middle"
+                            >
+                                <path class="domain" stroke="currentColor" d="M0,0H745" />
+
+                                <g class="tick" opacity="1" transform="translate(124.49955317247539,0)">
+                                    <line stroke="currentColor" y2="6" />
+                                    <text class="texto" fill="currentColor" y="9" dy="0.71em">
+                                        Pontificia Universidad Católica de Chile (UC)
+                                    </text>
+                                </g>
+
+                                <g class="tick" opacity="1" transform="translate(372.5,0)">
+                                    <line stroke="currentColor" y2="6" />
+                                    <text class="texto" fill="currentColor" y="9" dy="0.71em">
+                                        Universidad de Chile
+                                    </text>
+                                </g>
+
+                                <g class="tick" opacity="1" transform="translate(620.5004468275246,0)">
+                                    <line stroke="currentColor" y2="6" />
+                                    <text class="texto" fill="currentColor" y="9" dy="0.71em">
+                                        Universidad del Desarrollo (UDD)
+                                    </text>
+                                </g>
+                            </g>
+
+                            <!-- Eje Y -->
+                            <g
+                                id="yAxis"
+                                class="eje"
+                                fill="none"
+                                font-size="10"
+                                font-family="sans-serif"
+                                text-anchor="end"
+                            >
+                                <path class="domain" stroke="currentColor" d="M0,560V0" />
+
+                                <g class="tick" opacity="1" transform="translate(0,560)">
+                                    <line stroke="currentColor" x2="-6" />
+                                    <text class="texto" fill="currentColor" x="-9" dy="0.32em">0</text>
+                                </g>
+
+                                <g class="tick" opacity="1" transform="translate(0,480.00000000000006)">
+                                    <line stroke="currentColor" x2="-6" />
+                                    <text class="texto" fill="currentColor" x="-9" dy="0.32em">50</text>
+                                </g>
+
+                                <g class="tick" opacity="1" transform="translate(0,400)">
+                                    <line stroke="currentColor" x2="-6" />
+                                    <text class="texto" fill="currentColor" x="-9" dy="0.32em">100</text>
+                                </g>
+
+                                <g class="tick" opacity="1" transform="translate(0,320)">
+                                    <line stroke="currentColor" x2="-6" />
+                                    <text class="texto" fill="currentColor" x="-9" dy="0.32em">150</text>
+                                </g>
+
+                                <g class="tick" opacity="1" transform="translate(0,240.00000000000003)">
+                                    <line stroke="currentColor" x2="-6" />
+                                    <text class="texto" fill="currentColor" x="-9" dy="0.32em">200</text>
+                                </g>
+
+                                <g class="tick" opacity="1" transform="translate(0,160)">
+                                    <line stroke="currentColor" x2="-6" />
+                                    <text class="texto" fill="currentColor" x="-9" dy="0.32em">250</text>
+                                </g>
+
+                                <g class="tick" opacity="1" transform="translate(0,80.00000000000003)">
+                                    <line stroke="currentColor" x2="-6" />
+                                    <text class="texto" fill="currentColor" x="-9" dy="0.32em">300</text>
+                                </g>
+
+                                <g class="tick" opacity="1" transform="translate(0,0)">
+                                    <line stroke="currentColor" x2="-6" />
+                                    <text class="texto" fill="currentColor" x="-9" dy="0.32em">350</text>
+                                </g>
+                            </g>
+
+                            <text
+                                y="556"
+                                x="745"
+                                text-anchor="end"
+                                style="
+                                    font-family: Arial, sans-serif;
+                                    font-size: 12px;
+                                    fill: rgb(123, 123, 123);
+                                    font-weight: bold;
+                                "
+                            >
+                                Name
+                            </text>
+                        </g>
+
+                        <text
+                            x="4"
+                            y="4"
+                            style="
+                                font-family: Arial, sans-serif;
+                                font-size: 12px;
+                                fill: black;
+                                font-weight: bold;
+                                dominant-baseline: hanging;
+                            "
+                        />
+                    </g>
+
+                    <g id="grid" class="grid">
+                        <rect x="0" y="0" width="805" height="600" />
+                    </g>
                 </g>
 
-                <g id="Employer Reputation Score" fill="#2ca02c">
-                    <rect class="barra" x="496.99955317247543" y="490.56" width="247.0017873100983" height="28.480000000000018" />
-                    <rect class="barra" x="248.99910634495083" y="300.96000000000004" width="247.0017873100983" height="136.15999999999997" />
-                    <rect class="barra" x="0.9986595174262334" y="277.91999999999996" width="247.0017873100983" height="154.56" />
-                </g>
+                <!-- Leyenda original -->
+                <g id="legend" transform="translate(805,20)">
+                    <g transform="translate(5,0)">
+                        <g class="legendColor" transform="translate(0,0)">
+                            <g class="legendCells" transform="translate(0,15.5)">
+                                <g class="cell item" transform="translate(0, 0)">
+                                    <rect class="swatch" height="15" width="15" style="fill: rgb(31, 119, 180)" />
+                                    <text
+                                        class="label"
+                                        transform="translate(20, 12.5)"
+                                        font-family='"Arial", sans-serif'
+                                        font-size="10px"
+                                    >
+                                        <tspan x="0" dy="0em">Academic Reputation Score</tspan>
+                                    </text>
+                                </g>
 
-                <g id="Faculty Student Score" fill="#d62728">
-                    <rect class="barra" x="496.99955317247543" y="464.32000000000005" width="247.0017873100983" height="26.24000000000001" />
-                    <rect class="barra" x="248.99910634495083" y="285.12" width="247.0017873100983" height="15.840000000000032" />
-                    <rect class="barra" x="0.9986595174262334" y="216.63999999999996" width="247.0017873100983" height="61.27999999999997" />
-                </g>
+                                <g class="cell item" transform="translate(0, 20.5)">
+                                    <rect class="swatch" height="15" width="15" style="fill: rgb(255, 127, 14)" />
+                                    <text
+                                        class="label"
+                                        transform="translate(20, 12.5)"
+                                        font-family='"Arial", sans-serif'
+                                        font-size="10px"
+                                    >
+                                        <tspan x="0" dy="0em">Citations per Faculty Score</tspan>
+                                    </text>
+                                </g>
 
-                <g id="Citations per Faculty Score" fill="#ff7f0e">
-                    <rect class="barra" x="496.99955317247543" y="458.88" width="247.0017873100983" height="5.439999999999941" />
-                    <rect class="barra" x="248.99910634495083" y="259.52000000000004" width="247.0017873100983" height="25.600000000000023" />
-                    <rect class="barra" x="0.9986595174262334" y="195.83999999999997" width="247.0017873100983" height="20.799999999999955" />
-                </g>
+                                <g class="cell item" transform="translate(0, 41)">
+                                    <rect class="swatch" height="15" width="15" style="fill: rgb(44, 160, 44)" />
+                                    <text
+                                        class="label"
+                                        transform="translate(20, 12.5)"
+                                        font-family='"Arial", sans-serif'
+                                        font-size="10px"
+                                    >
+                                        <tspan x="0" dy="0em">Employer Reputation Score</tspan>
+                                    </text>
+                                </g>
 
-                <g id="Academic Reputation Score" fill="#1f77b4">
-                    <rect class="barra" x="496.99955317247543" y="436.32" width="247.0017873100983" height="22.559999999999945" />
-                    <rect class="barra" x="248.99910634495083" y="112.32000000000009" width="247.0017873100983" height="147.2" />
-                    <rect class="barra" x="0.9986595174262334" y="38.87999999999992" width="247.0017873100983" height="156.96000000000004" />
-                </g>
+                                <g class="cell item" transform="translate(0, 61.5)">
+                                    <rect class="swatch" height="15" width="15" style="fill: rgb(214, 39, 40)" />
+                                    <text
+                                        class="label"
+                                        transform="translate(20, 12.5)"
+                                        font-family='"Arial", sans-serif'
+                                        font-size="10px"
+                                    >
+                                        <tspan x="0" dy="0em">Faculty Student Score</tspan>
+                                    </text>
+                                </g>
 
-                <!-- Eje X -->
-                <g id="xAxis" class="eje" transform="translate(0,560)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
-                    <path class="domain" stroke="currentColor" d="M0,0H745" />
+                                <g class="cell item" transform="translate(0, 82)">
+                                    <rect class="swatch" height="15" width="15" style="fill: rgb(235, 33, 132)" />
+                                    <text
+                                        class="label"
+                                        transform="translate(20, 12.5)"
+                                        font-family='"Arial", sans-serif'
+                                        font-size="10px"
+                                    >
+                                        <tspan x="0" dy="0em">International Research</tspan>
+                                        <tspan x="0" dy="1.2em">Network Score</tspan>
+                                    </text>
+                                </g>
+                            </g>
 
-                    <g class="tick" opacity="1" transform="translate(124.49955317247539,0)">
-                        <line stroke="currentColor" y2="6" />
-                        <text class="texto" fill="currentColor" y="9" dy="0.71em">Pontificia Universidad Católica de Chile (UC)</text>
-                    </g>
-
-                    <g class="tick" opacity="1" transform="translate(372.5,0)">
-                        <line stroke="currentColor" y2="6" />
-                        <text class="texto" fill="currentColor" y="9" dy="0.71em">Universidad de Chile</text>
-                    </g>
-
-                    <g class="tick" opacity="1" transform="translate(620.5004468275246,0)">
-                        <line stroke="currentColor" y2="6" />
-                        <text class="texto" fill="currentColor" y="9" dy="0.71em">Universidad del Desarrollo (UDD)</text>
-                    </g>
-                </g>
-
-                <!-- Eje Y -->
-                <g id="yAxis" class="eje" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
-                    <path class="domain" stroke="currentColor" d="M0,560V0" />
-
-                    <g class="tick" opacity="1" transform="translate(0,560)">
-                        <line stroke="currentColor" x2="-6" />
-                        <text class="texto" fill="currentColor" x="-9" dy="0.32em">0</text>
-                    </g>
-
-                    <g class="tick" opacity="1" transform="translate(0,480.00000000000006)">
-                        <line stroke="currentColor" x2="-6" />
-                        <text class="texto" fill="currentColor" x="-9" dy="0.32em">50</text>
-                    </g>
-
-                    <g class="tick" opacity="1" transform="translate(0,400)">
-                        <line stroke="currentColor" x2="-6" />
-                        <text class="texto" fill="currentColor" x="-9" dy="0.32em">100</text>
-                    </g>
-
-                    <g class="tick" opacity="1" transform="translate(0,320)">
-                        <line stroke="currentColor" x2="-6" />
-                        <text class="texto" fill="currentColor" x="-9" dy="0.32em">150</text>
-                    </g>
-
-                    <g class="tick" opacity="1" transform="translate(0,240.00000000000003)">
-                        <line stroke="currentColor" x2="-6" />
-                        <text class="texto" fill="currentColor" x="-9" dy="0.32em">200</text>
-                    </g>
-
-                    <g class="tick" opacity="1" transform="translate(0,160)">
-                        <line stroke="currentColor" x2="-6" />
-                        <text class="texto" fill="currentColor" x="-9" dy="0.32em">250</text>
-                    </g>
-
-                    <g class="tick" opacity="1" transform="translate(0,80.00000000000003)">
-                        <line stroke="currentColor" x2="-6" />
-                        <text class="texto" fill="currentColor" x="-9" dy="0.32em">300</text>
-                    </g>
-
-                    <g class="tick" opacity="1" transform="translate(0,0)">
-                        <line stroke="currentColor" x2="-6" />
-                        <text class="texto" fill="currentColor" x="-9" dy="0.32em">350</text>
+                            <text
+                                class="legendTitle"
+                                font-family='"Arial", sans-serif'
+                                font-size="12px"
+                                font-weight="bold"
+                            >
+                                <tspan x="0" dy="0em">Colors</tspan>
+                            </text>
+                        </g>
                     </g>
                 </g>
+            </svg>
 
-                <text y="556" x="745" text-anchor="end"
-                    style="font-family: Arial, sans-serif; font-size: 12px; fill: rgb(123, 123, 123); font-weight: bold">
-                    Name
-                </text>
+            <p>
+                <span style="font-size: 19.2px"
+                    >La comparación de las dimensiones evaluadas revela una clara ventaja de las universidades
+                    tradicionales, donde la Pontificia Universidad Católica de Chile (UC) lidera en la mayoría de los
+                    indicadores, obteniendo sus puntajes más altos en "Academic Reputation Score" (98.1) y "Employer
+                    Reputation Score" (96.6). La Universidad de Chile mantiene una posición competitiva y cercana a la
+                    UC en reputación académica y de empleadores, destacando además por tener el puntaje más alto en
+                    "Citations per Faculty Score" (16), superando los 13 puntos de la UC en esa misma métrica. En
+                    contraste, la Universidad del Desarrollo (UDD) presenta puntajes significativamente menores en todas
+                    las categorías, siendo su dimensión más fuerte el "International Research Network Score" con 25,6
+                    puntos. Como se aprecia en el gráfico de barras apiladas, la suma total de las dimensiones posiciona
+                    a la UC a la cabeza, seguida por la Universidad de Chile, dejando a la UDD con una altura total
+                    visiblemente inferior.</span
+                >
+            </p>
 
-            </g>
-
-            <text x="4" y="4"
-                style="font-family: Arial, sans-serif; font-size: 12px; fill: black; font-weight: bold; dominant-baseline: hanging;" />
-        </g>
-
-        <g id="grid" class="grid">
-            <rect x="0" y="0" width="805" height="600" />
-        </g>
-    </g>
-
-    <!-- Leyenda original -->
-    <g id="legend" transform="translate(805,20)">
-        <g transform="translate(5,0)">
-            <g class="legendColor" transform="translate(0,0)">
-                <g class="legendCells" transform="translate(0,15.5)">
-
-                    <g class="cell item" transform="translate(0, 0)">
-                        <rect class="swatch" height="15" width="15" style="fill: rgb(31, 119, 180)" />
-                        <text class="label" transform="translate(20, 12.5)" font-family='"Arial", sans-serif' font-size="10px">
-                            <tspan x="0" dy="0em">Academic Reputation Score</tspan>
-                        </text>
-                    </g>
-
-                    <g class="cell item" transform="translate(0, 20.5)">
-                        <rect class="swatch" height="15" width="15" style="fill: rgb(255, 127, 14)" />
-                        <text class="label" transform="translate(20, 12.5)" font-family='"Arial", sans-serif' font-size="10px">
-                            <tspan x="0" dy="0em">Citations per Faculty Score</tspan>
-                        </text>
-                    </g>
-
-                    <g class="cell item" transform="translate(0, 41)">
-                        <rect class="swatch" height="15" width="15" style="fill: rgb(44, 160, 44)" />
-                        <text class="label" transform="translate(20, 12.5)" font-family='"Arial", sans-serif' font-size="10px">
-                            <tspan x="0" dy="0em">Employer Reputation Score</tspan>
-                        </text>
-                    </g>
-
-                    <g class="cell item" transform="translate(0, 61.5)">
-                        <rect class="swatch" height="15" width="15" style="fill: rgb(214, 39, 40)" />
-                        <text class="label" transform="translate(20, 12.5)" font-family='"Arial", sans-serif' font-size="10px">
-                            <tspan x="0" dy="0em">Faculty Student Score</tspan>
-                        </text>
-                    </g>
-
-                    <g class="cell item" transform="translate(0, 82)">
-                        <rect class="swatch" height="15" width="15" style="fill: rgb(235, 33, 132)" />
-                        <text class="label" transform="translate(20, 12.5)" font-family='"Arial", sans-serif' font-size="10px">
-                            <tspan x="0" dy="0em">International Research</tspan>
-                            <tspan x="0" dy="1.2em">Network Score</tspan>
-                        </text>
-                    </g>
-
-                </g>
-
-                <text class="legendTitle" font-family='"Arial", sans-serif' font-size="12px" font-weight="bold">
-                    <tspan x="0" dy="0em">Colors</tspan>
-                </text>
-
-            </g>
-        </g>
-    </g>
-
-</svg>
-
-            <p><span style="font-size: 19.2px;">La comparación de las dimensiones evaluadas revela una clara ventaja de las universidades tradicionales, donde la Pontificia Universidad Católica de Chile (UC) lidera en la mayoría de los indicadores, obteniendo sus puntajes más altos en "Academic Reputation Score" (98.1) y "Employer Reputation Score" (96.6). La Universidad de Chile mantiene una posición competitiva y cercana a la UC en reputación académica y de empleadores, destacando además por tener el puntaje más alto en "Citations per Faculty Score" (16), superando los 13 puntos de la UC en esa misma métrica. En contraste, la Universidad del Desarrollo (UDD) presenta puntajes significativamente menores en todas las categorías, siendo su dimensión más fuerte el "International Research Network Score" con 25,6 puntos. Como se aprecia en el gráfico de barras apiladas, la suma total de las dimensiones posiciona a la UC a la cabeza, seguida por la Universidad de Chile, dejando a la UDD con una altura total visiblemente inferior.</span></p>
-
-            <hr>
+            <hr />
 
             <h3 id="escuelas">
                 Las 100 mejores escuelas de Arte y Diseño según
@@ -708,7 +990,12 @@
             </h3>
 
             <p>
-                El <em><abbr title="Quacquarelli Symonds">QS</abbr> World University Rankings by Subject</em> se rige por criterios distintos a los del ranking institucional. En Arte y Diseño no mide citas de investigación ni índice H, y se apoya solo en la reputación académica y la reputación entre empleadores. Sus críticos advierten que este enfoque abre un mayor margen de subjetividad. Chile queda con poca presencia: solo tres universidades (la <abbr>PUC</abbr>, la <abbr>UCh</abbr> y la <abbr>UDD</abbr>) figuran en la medición, con una entre las 100 mejores.
+                El <em><abbr title="Quacquarelli Symonds">QS</abbr> World University Rankings by Subject</em> se rige
+                por criterios distintos a los del ranking institucional. En Arte y Diseño no mide citas de investigación
+                ni índice H, y se apoya solo en la reputación académica y la reputación entre empleadores. Sus críticos
+                advierten que este enfoque abre un mayor margen de subjetividad. Chile queda con poca presencia: solo
+                tres universidades (la <abbr>PUC</abbr>, la <abbr>UCh</abbr> y la <abbr>UDD</abbr>) figuran en la
+                medición, con una entre las 100 mejores.
             </p>
 
             <h4>América</h4>
@@ -771,9 +1058,7 @@
                     <em>Universidad de Buenos Aires (Argentina):</em> una de las instituciones históricas más
                     prominentes de Sudamérica.
                 </li>
-                <li>
-                    <em>Tecnológico de Monterrey (México):</em> presente en el ranking de Arte y Diseño.
-                </li>
+                <li><em>Tecnológico de Monterrey (México):</em> presente en el ranking de Arte y Diseño.</li>
                 <li>
                     <em>Universidad Nacional Autónoma de México (México):</em> una de las universidades más grandes y
                     reconocidas de la región en artes y humanidades.
@@ -790,7 +1075,16 @@
                 <dt>Fuentes</dt>
                 <dd>
                     <em>Datos:</em> Tomados el 21 de septiembre de 2026 desde
-                    <a href="https://www.topuniversities.com/world-university-rankings" target="_blank" rel="noopener">QS World University Rankings</a> y <a href="https://www.topuniversities.com/university-subject-rankings/art-design" target="_blank" rel="noopener">QS World University Rankings by Subject: Art &amp; Design</a>.
+                    <a href="https://www.topuniversities.com/world-university-rankings" target="_blank" rel="noopener"
+                        >QS World University Rankings</a
+                    >
+                    y
+                    <a
+                        href="https://www.topuniversities.com/university-subject-rankings/art-design"
+                        target="_blank"
+                        rel="noopener"
+                        >QS World University Rankings by Subject: Art &amp; Design</a
+                    >.
                 </dd>
                 <dd>
                     <em>Procesamiento:</em> Datos estructurados en formato JSON e incorporados a la página mediante
@@ -844,7 +1138,27 @@
                         {
                             label: "Instituciones en el ranking",
                             data: [184, 30, 22, 18, 17, 16, 12, 6, 6, 4, 4, 3, 2, 2, 2, 1, 1, 1, 1],
-                            backgroundColor: ["rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)", "rgb(214, 214, 214)"],
+                            backgroundColor: [
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                                "rgb(214, 214, 214)",
+                            ],
                             borderWidth: 1,
                         },
                     ],
@@ -856,7 +1170,10 @@
                     aspectRatio: 1,
                     plugins: {
                         legend: { display: false },
-                        title: { display: true, text: "Instituciones americanas en el QS World University Rankings, por país (total: 332)" },
+                        title: {
+                            display: true,
+                            text: "Instituciones americanas en el QS World University Rankings, por país (total: 332)",
+                        },
                     },
                     scales: {
                         x: { title: { display: true, text: "Número de instituciones" } },
@@ -925,13 +1242,21 @@
                 { rank: "29", name: "UCSI University", location: "Malaysia" },
                 { rank: "30", name: "Emily Carr University of Art + Design", location: "Canada" },
                 { rank: "31", name: "Stanford University", location: "United States" },
-                { rank: "32", name: "Nanyang Technological University, Singapore (NTU Singapore)", location: "Singapore" },
+                {
+                    rank: "32",
+                    name: "Nanyang Technological University, Singapore (NTU Singapore)",
+                    location: "Singapore",
+                },
                 { rank: "33", name: "Yale University", location: "United States" },
                 { rank: "34", name: "Ecole des Arts Décoratifs - PSL", location: "France" },
                 { rank: "35", name: "Harvard University", location: "United States" },
                 { rank: "36", name: "New York University (NYU)", location: "United States" },
                 { rank: "37", name: "Haute Ecole dart et de design de Genève (HEAD)", location: "Switzerland" },
-                { rank: "38", name: "École Nationale Supérieure de Création Industrielle, ENSCI Les Ateliers", location: "France" },
+                {
+                    rank: "38",
+                    name: "École Nationale Supérieure de Création Industrielle, ENSCI Les Ateliers",
+                    location: "France",
+                },
                 { rank: "39", name: "Seoul National University", location: "South Korea" },
                 { rank: "40", name: "École Nationale Supérieure des Beaux-Arts, Paris", location: "France" },
                 { rank: "41", name: "Zurich University of the Arts", location: "Switzerland" },
@@ -993,7 +1318,7 @@
                 { rank: "96", name: "Universidade de São Paulo", location: "Brazil" },
                 { rank: "98", name: "Chiba University", location: "Japan" },
                 { rank: "99", name: "Cornell University", location: "United States" },
-                { rank: "99", name: "Zhejiang University", location: "China" }
+                { rank: "99", name: "Zhejiang University", location: "China" },
             ];
 
             function llenarTablas(escuelas) {
