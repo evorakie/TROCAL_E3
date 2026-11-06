@@ -231,7 +231,7 @@
                 margin: 1rem -1rem;
                 width: calc(100% + 2rem);
                 height: auto;
-                aspect-ratio: 880 / 580; /* debe coincidir con el viewBox de viz.svg */
+                aspect-ratio: 1036 / 600; /* debe coincidir con el viewBox de viz.svg */
             }
 
             svg.grafico {
@@ -239,7 +239,7 @@
                 margin: 1rem -1rem 3rem -1rem;
                 width: calc(100% + 2rem);
                 height: auto;
-                aspect-ratio: 880 / 580;
+                aspect-ratio: 1036 / 600;
             }
 
             canvas {
